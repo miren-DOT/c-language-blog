@@ -1,19 +1,25 @@
-export default {
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
   title: "C语言学习笔记",
-  description: "大一C语言预习博客，循环、水仙花数代码示例",
+  lang: 'zh-CN',
   themeConfig: {
-    // 左上角logo文字
-    siteTitle: "C语言学习笔记",
-    // 侧边导航栏
+    // 本地搜索，打开顶部搜索框
+    search: {
+      provider: 'local'
+    },
+    // 侧边栏菜单
     sidebar: [
       {
-        text: "C语言基础",
+        text: 'C语言学习笔记',
         items: [
-          { text: "循环结构", link: "/loop" },
-          { text: "水仙花数", link: "/narcissistic" },
-          { text: "九九乘法表", link: "/nine-nine" }
+          { text: '循环基础', link: '/loop' },
+          { text: '水仙花数', link: '/narcissistic' },
+          { text: '九九乘法表', link: '/nine-nine' },
+          // ==========这里新增下面两行==========
+          { text: '后台登录', link: '/admin' }
         ]
       }
     ]
   }
-}
+})
