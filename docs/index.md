@@ -40,40 +40,19 @@ features:
 #include <stdio.h>
 int main()
 {
-    int i;
-    for(i=100;i<=999;i++)
+  int i;
+  for(i=100;i<=999;i++)
+  {
+    int a=i/100;
+    int b=i/10%10;
+    int c=i%10;
+    if(a*a*a + b*b*b + c*c*c == i)
     {
-        int a=i/100;
-        int b=i/10%10;
-        int c=i%10;
-        if(a*a*a + b*b*b + c*c*c == i)
-        {
-            printf("%d 是水仙花数\n",i);
-        }
+      printf("%d 是水仙花数\n",i);
     }
-<script setup>
-import {ref,onMounted} from 'vue'
-const tempArticles = ref([])
-
-// 读取localStorage里临时发布的文章
-const getArticleListApi = () => {
-  const data = localStorage.getItem("blog_articles")
-  if(data) return JSON.parse(data)
-  return []
+  }
+  return 0;
 }
-
-onMounted(()=>{
-  tempArticles.value = getArticleListApi()
-})
-</script>
-
-## 临时新增文章（后台发布，浏览器本地存储）
-<div v-for="item in tempArticles" :key="item.time">
-  <h3>{{item.title}}</h3>
-  <p>标签：{{item.tags.join(" / ")}}</p>
-  <p>发布时间：{{item.time}}</p>
-  <p>{{item.content}}</p>
-</div>
-
-    return 0;
-}
+<script setup> import {ref,onMounted} from 'vue' const tempArticles = ref([]) // 读取localStorage里临时发布的文章 const getArticleListApi = () => { const data = localStorage.getItem("blog_articles") if(data) return JSON.parse(data) return [] } onMounted(()=>{ tempArticles.value = getArticleListApi() }) </script>
+临时新增文章（后台发布，浏览器本地存储）
+<div v-for="item in tempArticles" :key="item.time"> <h3>{{item.title}}</h3> <p>标签: {{item.tags.join(" / ")}}</p> <p>发布时间: {{item.time}}</p> <p>{{item.content}}</p> </div> ```
