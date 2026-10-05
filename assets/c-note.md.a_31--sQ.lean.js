@@ -1,0 +1,1 @@
+import{_ as i,o as a,c as n,a4 as t}from"./chunks/framework.BHr7yxG4.js";const o=JSON.parse('{"title":"C语言循环学习笔记","description":"","frontmatter":{},"headers":[],"relativePath":"c-note.md","filePath":"c-note.md"}'),h={name:"c-note.md"};function l(e,s,p,k,r,d){return a(),n("div",null,[...s[0]||(s[0]=[t("",3)])])}const c=i(h,[["render",l]]);export{o as __pageData,c as default};
