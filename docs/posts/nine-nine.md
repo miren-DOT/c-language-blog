@@ -1,3 +1,9 @@
+---
+title: C语言九九乘法表
+date: 2026-10-03
+tags: ["C语言"]
+summary: "利用for循环打印九九乘法表，练习嵌套循环的写法。"
+---
 
 ### ✅ nine-nine.md（干净无乱码版本）
 ```markdown
