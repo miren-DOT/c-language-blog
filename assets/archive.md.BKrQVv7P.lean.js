@@ -1,0 +1,1 @@
+import{_ as e,o as l,c as t,a4 as o}from"./chunks/framework.BHr7yxG4.js";const _=JSON.parse('{"title":"📁 文章归档","description":"","frontmatter":{},"headers":[],"relativePath":"archive.md","filePath":"archive.md"}'),r={name:"archive.md"};function i(n,a,s,h,c,d){return l(),t("div",null,[...a[0]||(a[0]=[o("",7)])])}const m=e(r,[["render",i]]);export{_ as __pageData,m as default};

@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o,a4 as s}from"./chunks/framework.BHr7yxG4.js";const u=JSON.parse('{"title":"# 🏷️ 标签","description":"","frontmatter":{},"headers":[],"relativePath":"tags.md","filePath":"tags.md"}'),r={name:"tags.md"};function n(i,a,l,h,d,c){return t(),o("div",null,[...a[0]||(a[0]=[s("",12)])])}const m=e(r,[["render",n]]);export{u as __pageData,m as default};
